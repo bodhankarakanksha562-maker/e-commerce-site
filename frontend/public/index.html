@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our E-Commerce Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product-list">
+            <h2>Featured Products</h2>
+            <div id="products"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 E-Commerce Site. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      document.getElementById('home-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'index.html';
+      });
+    </script>
+</body>
+</html>
